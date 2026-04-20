@@ -1,0 +1,26 @@
+<h1> Every time my english teacher said Bear. </h1>
+  <p> Cause he really likes bears.</P>
+<style>
+  body {
+    background-image: url('Baer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-attachment: fixed; 
+  }
+</style>
+<!-- The Displayed Number -->
+<span id="number">0</span>
+
+<!-- The Button -->
+<button onclick="increment()">+</button>
+
+<script>
+  function increment() {
+    
+    var current = parseInt(document.getElementById('number').innerText);
+  
+    var next = current + 1;
+  
+    document.getElementById('number').innerText = next;
+  }
+</script>
