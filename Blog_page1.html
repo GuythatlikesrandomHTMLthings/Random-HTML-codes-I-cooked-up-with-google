@@ -17,3 +17,22 @@ function toggleText() {
   }
 }
 </script>
+
+<button style="border-radius: 10px; padding: 10px 20px;" onclick="toggleText()">Activity 1</button>
+
+
+<div id="myText" style="display: none;">
+ <h1>Test Text</h1>
+The Answer: 42
+</div>
+
+<script>
+function toggleText() {
+  var x = document.getElementById("myText");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none"; 
+  }
+}
+</script>
