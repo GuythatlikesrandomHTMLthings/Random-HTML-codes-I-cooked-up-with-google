@@ -1,0 +1,18 @@
+<!-- The Button -->
+<button onclick="toggleText()">Click Me</button>
+
+
+<div id="myText" style="display: none;">
+  The quick brown fox jumped over the lazy dog
+</div>
+
+<script>
+function toggleText() {
+  var x = document.getElementById("myText");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none"; 
+  }
+}
+</script>
